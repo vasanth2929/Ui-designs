@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="hero-section">
+        <div class="image-wrapper">
+            <img src="/Design1/assets/img.jpeg" alt="sample image">
+        </div>
+        <div class="login-form-wrapper">
+            <form method="POST" class="login-form">
+                <p>Welcome To</p>
+                <br>
+                <img src="/Design1/assets/google.jpg" alt="LOGO" class="logo">
+                <div class="tabs">
+                    <span class="active">Login</span>
+                    <span>SignUp</span>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your-Email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Your-Password" class="form-control" required>
+                </div>
+                <span class="hint-text">Forgot Password ?</span>
+                <button type="submit" class="btn" id="login-btn">Login</button>
+                <button type="button" class="btn" id="oauth-btn"> 
+                    <img id="google-image"src="/Design1//assets/google.jpg" alt="google image"> 
+                    Sign In with Google
+                </button>
+                <a href="#" id="sign-up-link">Need An Account ? Sign Up here.</a>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

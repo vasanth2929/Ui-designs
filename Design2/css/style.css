@@ -1,0 +1,323 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --primary: rgba(216, 214, 214, 0.755);
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+#logo {
+  width: 65px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--primary);
+}
+
+#search-box {
+  background: var(--primary);
+  width: 700px;
+  padding: 10px;
+  margin-left: 200px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  font-size: 16px;
+}
+
+.icon {
+  margin: 0px 15px;
+}
+
+#search-icon {
+  margin-left: -35px;
+}
+
+#cart-icon {
+  margin-left: 35px;
+}
+
+.icon-wrapper {
+  position: relative;
+}
+
+.count {
+  position: absolute;
+  font-size: 10px;
+  right: 3px;
+  top: -10px;
+  background: green;
+  padding: 4px;
+  border-radius: 50%;
+}
+.wishlist-count {
+  background: lightgreen;
+}
+
+.tabs {
+  text-align: center;
+}
+.tabs span {
+  display: inline-block;
+  margin: 5px 20px;
+  padding-bottom: 8px;
+}
+
+.tabs span.active {
+  border-bottom: 2px solid green;
+}
+
+.breadcrumbs {
+  background: rgb(199, 196, 196);
+  padding: 8px;
+}
+
+.breadcrumbs ul li {
+  display: inline-block;
+  position: relative;
+  margin: 0px 10px;
+}
+
+.circle {
+  font-size: 5px;
+  position: absolute;
+  left: -10px;
+  top: 6px;
+}
+
+.active-text {
+  color: green;
+}
+
+.hint-text {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+label {
+  display: block;
+  margin: 5px 0px;
+}
+
+.form-group {
+  margin: 15px 0px;
+}
+
+.checkout-form input,
+.checkout-form textarea {
+  width: 90%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: none;
+}
+
+.checkout-form .btn {
+  outline: none;
+  border: none;
+  padding: 8px;
+  width: 120px;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+#checkout-btn {
+  background: green;
+  color: white;
+}
+
+#back-btn {
+  background: rgb(184, 180, 180);
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 60px;
+}
+
+.card {
+  padding: 20px;
+  width: 80%;
+  margin-left: 20px;
+  height: 550px;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0px 1px 3px rgb(74, 73, 73);
+}
+
+.card-item {
+  display: flex;
+  border: 1px solid var(--primary);
+  margin: 15px 0px;
+  padding: 8px;
+  position: relative;
+}
+
+.product-img {
+  width: 75px;
+}
+
+.product-info {
+  margin-left: 10px;
+}
+.product-price {
+  margin-top: -50px;
+}
+
+.quantity-box {
+  width: 30px;
+}
+
+.increment-btn,
+.decrement-btn {
+  outline: none;
+  border: none;
+  background: none;
+  border: 1px solid var(--primary);
+  border-radius: 50%;
+  padding: 3px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.price,
+.close {
+  position: absolute;
+}
+
+.close {
+  top: 5px;
+  right: 10px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.price {
+  top: 40%;
+  right: 30px;
+}
+
+.total {
+  width: 40%;
+  margin-left: auto;
+  margin-top: 30px;
+}
+.total-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 3px 0px;
+}
+
+.pay-btn {
+  margin: 20px auto;
+  width: 100%;
+  padding: 8px;
+  color: white;
+  background: green;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn:active {
+  transform: scale(0.99);
+}
+
+.footer {
+  background: var(--primary);
+  margin-top: 30px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+}
+.links div {
+  padding: 10px;
+}
+.links div a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+  #search-box {
+    width: 400px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .tabs {
+    display: none;
+  }
+  .main {
+    display: block;
+  }
+  .main img {
+    display: block;
+    margin: 5px auto;
+  }
+  #search-box {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 15px;
+  }
+  #cart-icon {
+    margin-left: 5px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .breadcrumbs ul {
+    display: flex;
+  }
+  .card {
+    width: 100%;
+    margin-left: 0px;
+    order: 1;
+  }
+  .checkout-form {
+    order: 2;
+  }
+  .checkout-form input,
+  .checkout-form textarea {
+    width: 100%;
+  }
+  .footer .container {
+    width: 100%;
+  }
+  .links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

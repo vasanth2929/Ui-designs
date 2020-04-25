@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/fontawesome.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <img src="./assets/google.jpg" alt="logo" id="logo">
+            <div class="actions">
+                <input type="text" id="search-box" placeholder="Search Products">
+                <i class="fa fa-search" id="search-icon"></i>
+                <span class="icon-wrapper">
+                    <i class="fa fa-shopping-cart icon" id="cart-icon"></i>
+                    <span class="count cart-count">05</span>
+                </span>
+                <span class="icon-wrapper">
+                    <i class="fa fa-heart icon"></i>
+                    <span class="count wishlist-count">03</span>
+                </span>
+            </div>
+        </div>
+        <div class="tabs">
+            <span>Home</span>
+            <span class="active">Products</span>
+            <span>Portfolio</span>
+            <span>Recycle</span>
+            <span>Offers Zone</span>
+        </div>
+        <div class="breadcrumbs">
+            <ul>
+                <li>Home</li>
+                <li> <i class="fa fa-circle circle"></i> Products</li>
+                <li class="active-text"> <i class="fa fa-circle circle"></i> Checkout</li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <form class="checkout-form">
+                <p class="hint-text">Customer Details</p>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Contact No</label>
+                    <input type="number" id="phone">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="zipcode">Zipcode</label>
+                    <input type="number" id="zipcode">
+                </div>
+                <div class="form-group">
+                    <label for="billing_address">Billing Address</label>
+                    <textarea id="billing_address" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="shipping_address">Shipping Address</label>
+                    <textarea id="shipping_address" rows="5"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="message">Order Message</label>
+                    <textarea id="message" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn" id="checkout-btn">Checkout</button>
+                <button type="button" class="btn" id="back-btn">Back To Cart</button>
+            </form>
+            <div class="card">
+                <p class="product-name">Cart Summary</p>
+                <div class="card-item">
+                    <img src="/Design2/assets/product1.jpg" class="product-img" alt="product1">
+                    <div class="product-info">
+                        <span>Asus Laptop Model 23</span>
+                        <br>
+                        <span>$10</span>
+                        <br>
+                        <br>
+                        <span>Quantity</span>
+                        <button class="decrement-btn">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                        <input type="text" class="quantity-box" value="3">
+                        <button class="increment-btn">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                        <span class="price">$30</span>
+                        <span class="close"><i class="fa fa-times"></i></span>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="/Design2/assets/product2.jpg" class="product-img" alt="product2">
+                    <div class="product-info">
+                        <span>Onida Tv </span>
+                        <br>
+                        <span>$47</span>
+                        <br>
+                        <br>
+                        <span>Quantity</span>
+                        <button class="decrement-btn">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                        <input type="text" class="quantity-box" value="1">
+                        <button class="increment-btn">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                        <span class="price">$47</span>
+                        <span class="close"><i class="fa fa-times"></i></span>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="/Design2/assets/product3.jpg" class="product-img" alt="product3">
+                    <div class="product-info">
+                        <span>Rolex Watch</span>
+                        <br>
+                        <span>$3</span>
+                        <br>
+                        <br>
+                        <span>Quantity</span>
+                        <button class="decrement-btn">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                        <input type="text" class="quantity-box" value="1">
+                        <button class="increment-btn">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                        <span class="price">$3</span>
+                        <span class="close"><i class="fa fa-times"></i></span>
+                    </div>
+                </div>
+                <div class="total">
+                    <div class="total-info">
+                        <span>Sub Total</span>
+                        <span>$80</span>
+                    </div>
+                    <div class="total-info">
+                        <span>Tax</span>
+                        <span>$3</span>
+                    </div>
+                    <hr>
+                    <div class="total-info">
+                        <span>Grand Total</span>
+                        <span>$83</span>
+                    </div>
+                </div>
+                <button class="pay-btn btn">Payable Amount - $83</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="links">
+                <div>
+                    <a href="#">MyAccount</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">About Us</a>
+                </div>
+                <div>
+                    <a href="#">Furniture Rental</a>
+                    <a href="#">Special Furniture Rental</a>
+                    <a href="#">Space Planning</a>
+                </div>
+                <div>
+                    <a href="#">News Letter</a>
+                    <a href="#">Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+                <div>
+                    <br>
+                    <a href="#">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#">Copyrights &copy; 2020 All rights reserved</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
