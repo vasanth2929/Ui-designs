@@ -81,15 +81,15 @@
                     <div class="product-info">
                         <span>Asus Laptop Model 23</span>
                         <br>
-                        <span>$10</span>
+                        <span class="marked-price">$10</span>
                         <br>
                         <br>
                         <span>Quantity</span>
-                        <button class="decrement-btn">
+                        <button class="decrement-btn q-btn">
                             <i class="fa fa-minus"></i>
                         </button>
-                        <input type="text" class="quantity-box" value="3">
-                        <button class="increment-btn">
+                        <input type="number" class="quantity-box" value="3" min="0">
+                        <button class="increment-btn q-btn">
                             <i class="fa fa-plus"></i>
                         </button>
                         <span class="price">$30</span>
@@ -101,15 +101,15 @@
                     <div class="product-info">
                         <span>Onida Tv </span>
                         <br>
-                        <span>$47</span>
+                        <span class="marked-price">$47</span>
                         <br>
                         <br>
                         <span>Quantity</span>
-                        <button class="decrement-btn">
+                        <button class="decrement-btn q-btn">
                             <i class="fa fa-minus"></i>
                         </button>
-                        <input type="text" class="quantity-box" value="1">
-                        <button class="increment-btn">
+                        <input type="number" class="quantity-box" value="1" min="0">
+                        <button class="increment-btn q-btn">
                             <i class="fa fa-plus"></i>
                         </button>
                         <span class="price">$47</span>
@@ -121,15 +121,15 @@
                     <div class="product-info">
                         <span>Rolex Watch</span>
                         <br>
-                        <span>$3</span>
+                        <span class="marked-price">$3</span>
                         <br>
                         <br>
                         <span>Quantity</span>
-                        <button class="decrement-btn">
+                        <button class="decrement-btn q-btn">
                             <i class="fa fa-minus"></i>
                         </button>
-                        <input type="text" class="quantity-box" value="1">
-                        <button class="increment-btn">
+                        <input type="number" class="quantity-box" value="1" min="0">
+                        <button class="increment-btn q-btn">
                             <i class="fa fa-plus"></i>
                         </button>
                         <span class="price">$3</span>
@@ -139,7 +139,7 @@
                 <div class="total">
                     <div class="total-info">
                         <span>Sub Total</span>
-                        <span>$80</span>
+                        <span id="sub-total">$80</span>
                     </div>
                     <div class="total-info">
                         <span>Tax</span>
@@ -148,7 +148,7 @@
                     <hr>
                     <div class="total-info">
                         <span>Grand Total</span>
-                        <span>$83</span>
+                        <span id="grand-total">$83</span>
                     </div>
                 </div>
                 <button class="pay-btn btn">Payable Amount - $83</button>
@@ -184,6 +184,7 @@
             </div>
         </div>
     </div>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
