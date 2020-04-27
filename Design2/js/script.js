@@ -33,3 +33,12 @@ function calculateTotal(){
     grandTotalDiv.innerHTML =`$${total + 3}`;
     paybtn.innerHTML = `Payable Amount - $${total+3}`;
 }
+
+
+// close 
+let close = document.querySelectorAll('.close');
+close.forEach(cl=>{
+    cl.addEventListener('click',()=>{
+        cl.parentElement.parentElement.style.display='none';
+    })
+})
